@@ -16,12 +16,10 @@
 ## Descripción
 En este parrafo deberan describir que funcion cumple su proyecto. Que solucion esta ofreciendo.
 
-## Función principal
-Esta funcion se encarga de encender y apagar los leds.
+## Codigo pricnipal
+Esta codigo se encarga de encender y apagar los leds, y el sonido
 
-B0, B1, B2, B3 son #define que utilizamos para agregar los leds, asociandolo a pines de la placa arduino.
-
-(Breve explicación de la función)
+LED_ROJO, LED_ROJO, LED_AMARILLO, LED_AMARILLO2, LED_VERDE, LED_VERDE2, SONIDO son #define que utilizamos para agregar los leds y el buzzer, asociandolo a pines de la placa arduino.
 
 ~~~ C (lenguaje en el que esta escrito)
 void loop()
