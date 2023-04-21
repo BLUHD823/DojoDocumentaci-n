@@ -39,49 +39,19 @@ continuación.
 
 
 ## Codigo pricnipal
-Esta codigo se encarga de encender y apagar los leds, y el sonido
+Esta funcion se encarga de encender el sonido y apagarlo el tiempo deseado
 
-LED_ROJO, LED_ROJO, LED_AMARILLO, LED_AMARILLO2, LED_VERDE, LED_VERDE2, SONIDO son #define que utilizamos para agregar los leds y el buzzer, asociandolo a pines de la placa arduino.
+SONIDO son #define que utilizamos para agregar el buzzer, asociandolo a pines de la placa arduino.
 
 ~~~ C (lenguaje en el que esta escrito)
-void loop()
-{
-  digitalWrite(LED_ROJO, HIGH);
-  digitalWrite(LED_ROJO2, HIGH);
-  for (int i = 0;i<30;i++){
-	tone(SONIDO,2000);
+void Sonar(int tiempo, int num, int potencia){
+    for (int i = 0;i<num;i++){
+	tone(SONIDO,potencia);
 	delay(500);
     noTone(SONIDO);
-	delay(500);
+	delay(tiempo);
   }
-  digitalWrite(LED_ROJO, LOW);
-  digitalWrite(LED_ROJO2, LOW);
-
-  digitalWrite(LED_AMARILLO, HIGH);
-  digitalWrite(LED_AMARILLO2, HIGH);
-    for (int i = 0;i<2;i++){
-	tone(SONIDO,5000);
-	delay(500);
-    noTone(SONIDO);
-	delay(1500);
-  }
-  digitalWrite(LED_AMARILLO, LOW);
-  digitalWrite(LED_AMARILLO2, LOW);
-
-  digitalWrite(LED_VERDE, HIGH);
-  digitalWrite(LED_VERDE2, HIGH);
-  delay(45000);
-  digitalWrite(LED_VERDE, LOW);
-  digitalWrite(LED_VERDE2, LOW);
-	
-  digitalWrite(LED_AMARILLO, HIGH);
-  digitalWrite(LED_AMARILLO2, HIGH);
-  delay(5000);
-  digitalWrite(LED_AMARILLO, LOW);
-  digitalWrite(LED_AMARILLO2, LOW);
-
 }
-
 ~~~
 
 ## :robot: Link al proyecto
