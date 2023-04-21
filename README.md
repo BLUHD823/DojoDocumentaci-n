@@ -13,7 +13,7 @@
 ![Tinkercad](./imganes/Imagen.png)
 
 
-## Descripción
+## Consigna
 El gobierno de la cuidad quiere actualizar los semáforos que tiene instalados. La empresa
 “ScaraRobotics” gano la licitación y ahora les toca a los desarrolladores de la empresa generar
 un proyecto low cost que cumpla con las especificaciones que el gobierno de la cuidad nos
