@@ -6,7 +6,7 @@
 - Nazareno Gonzalez
 - Martin Luque
 - Agustin Mondani
-- Facundo Minio 
+- Facundo Miño 
 
 
 ## Proyecto: Contador binario.
