@@ -1,0 +1,63 @@
+// C++ code
+//
+#define LED_ROJO 13
+#define LED_ROJO2 12
+#define LED_AMARILLO 11
+#define LED_AMARILLO2 10
+#define LED_VERDE 9
+#define LED_VERDE2 8
+#define SONIDO 7
+
+//tone(SONIDO,500);
+//delay(2000)
+//Tone(SONIDO);
+//lay(1000);
+//
+
+
+void setup()
+{
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(LED_VERDE2, OUTPUT);
+  pinMode(LED_ROJO, OUTPUT);
+  pinMode(LED_ROJO2, OUTPUT);
+  pinMode(LED_AMARILLO, OUTPUT);
+  pinMode(LED_AMARILLO2, OUTPUT);
+}
+void loop()
+{
+  digitalWrite(LED_ROJO, HIGH);
+  digitalWrite(LED_ROJO2, HIGH);
+  for (int i = 0;i<30;i++){
+    tone(SONIDO,2000);
+    delay(500);
+    noTone(SONIDO);
+    delay(500);
+  }
+  digitalWrite(LED_ROJO, LOW);
+  digitalWrite(LED_ROJO2, LOW);
+
+  digitalWrite(LED_AMARILLO, HIGH);
+  digitalWrite(LED_AMARILLO2, HIGH);
+    for (int i = 0;i<2;i++){
+    tone(SONIDO,5000);
+    delay(500);
+    noTone(SONIDO);
+    delay(1500);
+  }
+  digitalWrite(LED_AMARILLO, LOW);
+  digitalWrite(LED_AMARILLO2, LOW);
+
+  digitalWrite(LED_VERDE, HIGH);
+  digitalWrite(LED_VERDE2, HIGH);
+  delay(45000);
+  digitalWrite(LED_VERDE, LOW);
+  digitalWrite(LED_VERDE2, LOW);
+
+  digitalWrite(LED_AMARILLO, HIGH);
+  digitalWrite(LED_AMARILLO2, HIGH);
+  delay(5000);
+  digitalWrite(LED_AMARILLO, LOW);
+  digitalWrite(LED_AMARILLO2, LOW);
+
+}
