@@ -8,11 +8,6 @@
 - Agustin Mondani
 - Facundo Miño 
 
-
-## Proyecto: Contador binario.
-![Tinkercad](./Imganes/Imagen.png)
-
-
 ## Consigna
 El gobierno de la cuidad quiere actualizar los semáforos que tiene instalados. La empresa
 “ScaraRobotics” gano la licitación y ahora les toca a los desarrolladores de la empresa generar
@@ -88,3 +83,4 @@ void loop()
 
 ## :robot: Link al proyecto
 - [Link Tinkercad](https://www.tinkercad.com/things/3UB47iIs1Iu-funky-borwo-lahdi/editel?sharecode=VVW9Wf8ew58oqMX5lVovzLTdFrnXEZk0e0ResUwPpYg)
+- ![Link GDB](https://onlinegdb.com/sXxg-CL2o)
