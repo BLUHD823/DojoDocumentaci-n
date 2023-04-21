@@ -8,13 +8,22 @@
 #define LED_VERDE2 8
 #define SONIDO 7
 
+void Sonar(int tiempo, int num, int potencia);
+
 //tone(SONIDO,500);
 //delay(2000)
 //Tone(SONIDO);
 //lay(1000);
 //
 
-
+int funcion(int a){
+	for (int i = 0;i<a;i++){
+	tone(SONIDO,2000);
+	delay(500);
+    noTone(SONIDO);
+	delay(500);
+  }
+}
 void setup()
 {
   pinMode(LED_VERDE, OUTPUT);
@@ -28,23 +37,13 @@ void loop()
 {
   digitalWrite(LED_ROJO, HIGH);
   digitalWrite(LED_ROJO2, HIGH);
-  for (int i = 0;i<30;i++){
-    tone(SONIDO,2000);
-    delay(500);
-    noTone(SONIDO);
-    delay(500);
-  }
+  Sonar(500, 30, 2000);
   digitalWrite(LED_ROJO, LOW);
   digitalWrite(LED_ROJO2, LOW);
-
+	
   digitalWrite(LED_AMARILLO, HIGH);
   digitalWrite(LED_AMARILLO2, HIGH);
-    for (int i = 0;i<2;i++){
-    tone(SONIDO,5000);
-    delay(500);
-    noTone(SONIDO);
-    delay(1500);
-  }
+  Sonar(1500, 2, 5000);
   digitalWrite(LED_AMARILLO, LOW);
   digitalWrite(LED_AMARILLO2, LOW);
 
@@ -53,11 +52,20 @@ void loop()
   delay(45000);
   digitalWrite(LED_VERDE, LOW);
   digitalWrite(LED_VERDE2, LOW);
-
+	
   digitalWrite(LED_AMARILLO, HIGH);
   digitalWrite(LED_AMARILLO2, HIGH);
   delay(5000);
   digitalWrite(LED_AMARILLO, LOW);
   digitalWrite(LED_AMARILLO2, LOW);
 
+}
+
+void Sonar(int tiempo, int num, int potencia){
+    for (int i = 0;i<num;i++){
+	tone(SONIDO,potencia);
+	delay(500);
+    noTone(SONIDO);
+	delay(tiempo);
+  }
 }
