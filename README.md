@@ -1,4 +1,4 @@
-# Ejemplo Documentación Dojos
+#Documentación Dojos 1
 
 
 ## Integrantes 
@@ -7,6 +7,9 @@
 - Martin Luque
 - Agustin Mondani
 - Facundo Miño 
+
+## Proyecto: DOJO.
+![Tinkercad](./Imagenes/Imagen.png)
 
 ## Consigna
 El gobierno de la cuidad quiere actualizar los semáforos que tiene instalados. La empresa
