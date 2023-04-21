@@ -1,4 +1,4 @@
-## Documentación Dojos 1
+# Documentación Dojos 1
 
 
 ## Integrantes 
